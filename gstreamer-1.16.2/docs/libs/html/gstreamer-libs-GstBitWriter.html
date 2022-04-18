@@ -1,0 +1,1320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstBitWriter: GStreamer 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-base.html" title="GStreamer Base and Utility Classes">
+<link rel="prev" href="gstreamer-libs-GstBitReader.html" title="GstBitReader">
+<link rel="next" href="gstreamer-libs-GstByteReader.html" title="GstByteReader">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gstreamer-libs-GstBitWriter.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-base.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gstreamer-libs-GstBitReader.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gstreamer-libs-GstByteReader.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gstreamer-libs-GstBitWriter"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gstreamer-libs-GstBitWriter.top_of_page"></a>GstBitWriter</span></h2>
+<p>GstBitWriter — Writes any number of bits into a memory buffer</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstBitWriter.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="returnvalue">GstBitWriter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-new" title="gst_bit_writer_new ()">gst_bit_writer_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="returnvalue">GstBitWriter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-new-with-size" title="gst_bit_writer_new_with_size ()">gst_bit_writer_new_with_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="returnvalue">GstBitWriter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-new-with-data" title="gst_bit_writer_new_with_data ()">gst_bit_writer_new_with_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-free" title="gst_bit_writer_free ()">gst_bit_writer_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/GstBuffer.html#GstBuffer-struct"><span class="returnvalue">GstBuffer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-free-and-get-buffer" title="gst_bit_writer_free_and_get_buffer ()">gst_bit_writer_free_and_get_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-free-and-get-data" title="gst_bit_writer_free_and_get_data ()">gst_bit_writer_free_and_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-init" title="gst_bit_writer_init ()">gst_bit_writer_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-init-with-size" title="gst_bit_writer_init_with_size ()">gst_bit_writer_init_with_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-init-with-data" title="gst_bit_writer_init_with_data ()">gst_bit_writer_init_with_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-reset" title="gst_bit_writer_reset ()">gst_bit_writer_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/GstBuffer.html#GstBuffer-struct"><span class="returnvalue">GstBuffer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-reset-and-get-buffer" title="gst_bit_writer_reset_and_get_buffer ()">gst_bit_writer_reset_and_get_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-reset-and-get-data" title="gst_bit_writer_reset_and_get_data ()">gst_bit_writer_reset_and_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-set-pos" title="gst_bit_writer_set_pos ()">gst_bit_writer_set_pos</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-get-size" title="gst_bit_writer_get_size ()">gst_bit_writer_get_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-get-data" title="gst_bit_writer_get_data ()">gst_bit_writer_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-get-remaining" title="gst_bit_writer_get_remaining ()">gst_bit_writer_get_remaining</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-get-size-unchecked" title="gst_bit_writer_get_size_unchecked ()">gst_bit_writer_get_size_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-get-data-unchecked" title="gst_bit_writer_get_data_unchecked ()">gst_bit_writer_get_data_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-set-pos-unchecked" title="gst_bit_writer_set_pos_unchecked ()">gst_bit_writer_set_pos_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-get-remaining-unchecked" title="gst_bit_writer_get_remaining_unchecked ()">gst_bit_writer_get_remaining_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint16" title="gst_bit_writer_put_bits_uint16 ()">gst_bit_writer_put_bits_uint16</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint32" title="gst_bit_writer_put_bits_uint32 ()">gst_bit_writer_put_bits_uint32</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint64" title="gst_bit_writer_put_bits_uint64 ()">gst_bit_writer_put_bits_uint64</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint8" title="gst_bit_writer_put_bits_uint8 ()">gst_bit_writer_put_bits_uint8</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bytes" title="gst_bit_writer_put_bytes ()">gst_bit_writer_put_bytes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint16-unchecked" title="gst_bit_writer_put_bits_uint16_unchecked ()">gst_bit_writer_put_bits_uint16_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint32-unchecked" title="gst_bit_writer_put_bits_uint32_unchecked ()">gst_bit_writer_put_bits_uint32_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint64-unchecked" title="gst_bit_writer_put_bits_uint64_unchecked ()">gst_bit_writer_put_bits_uint64_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bits-uint8-unchecked" title="gst_bit_writer_put_bits_uint8_unchecked ()">gst_bit_writer_put_bits_uint8_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-put-bytes-unchecked" title="gst_bit_writer_put_bytes_unchecked ()">gst_bit_writer_put_bytes_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-align-bytes" title="gst_bit_writer_align_bytes ()">gst_bit_writer_align_bytes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gstreamer-libs-GstBitWriter.html#gst-bit-writer-align-bytes-unchecked" title="gst_bit_writer_align_bytes_unchecked ()">gst_bit_writer_align_bytes_unchecked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstBitWriter.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter">GstBitWriter</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstBitWriter.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/base/base.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstBitWriter.description"></a><h2>Description</h2>
+<p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> provides a bit writer that can write any number of
+bits into a memory buffer. It provides functions for writing any
+number of bits into 8, 16, 32 and 64 bit variables.</p>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstBitWriter.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-bit-writer-new"></a><h3>gst_bit_writer_new ()</h3>
+<pre class="programlisting"><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="returnvalue">GstBitWriter</span></a> *
+gst_bit_writer_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new, empty <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance.</p>
+<p>Free-function: gst_bit_writer_free</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gst-bit-writer-new.returns"></a><h4>Returns</h4>
+<p>a new, empty <a class="link" href="gstreamer-libs-GstByteWriter.html#GstByteWriter" title="GstByteWriter"><span class="type">GstByteWriter</span></a> instance. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-new-with-size"></a><h3>gst_bit_writer_new_with_size ()</h3>
+<pre class="programlisting"><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="returnvalue">GstBitWriter</span></a> *
+gst_bit_writer_new_with_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> size</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fixed</code></em>);</pre>
+<p>Creates a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance with the given initial data size.</p>
+<p>Free-function: gst_bit_writer_free</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gst-bit-writer-new-with-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Initial size of data in bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the data can't be reallocated</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-new-with-size.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-new-with-data"></a><h3>gst_bit_writer_new_with_data ()</h3>
+<pre class="programlisting"><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="returnvalue">GstBitWriter</span></a> *
+gst_bit_writer_new_with_data (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> size</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> initialized</code></em>);</pre>
+<p>Creates a new <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance with the given memory area. If
+<em class="parameter"><code>initialized</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> it is possible to read <em class="parameter"><code>size</code></em>
+ bits from the
+<a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> from the beginnig.</p>
+<p>Free-function: gst_bit_writer_free</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gst-bit-writer-new-with-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Memory area for writing</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Size of <em class="parameter"><code>data</code></em>
+in bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>initialized</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the complete data can be read from the beginning</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-new-with-data.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-free"></a><h3>gst_bit_writer_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_free (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Frees <em class="parameter"><code>bitwriter</code></em>
+ and the allocated data inside.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-free-and-get-buffer"></a><h3>gst_bit_writer_free_and_get_buffer ()</h3>
+<pre class="programlisting"><a href="../html/GstBuffer.html#GstBuffer-struct"><span class="returnvalue">GstBuffer</span></a> *
+gst_bit_writer_free_and_get_buffer (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Frees <em class="parameter"><code>bitwriter</code></em>
+ without destroying the internal data, which is
+returned as <a href="../html/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>.</p>
+<p>Free-function: gst_buffer_unref</p>
+<div class="refsect3">
+<a name="gst-bit-writer-free-and-get-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-free-and-get-buffer.returns"></a><h4>Returns</h4>
+<p>a new allocated <a href="../html/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> wrapping the
+data inside. <a href="../html/GstBuffer.html#gst-buffer-unref"><code class="function">gst_buffer_unref()</code></a> after usage. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-free-and-get-data"></a><h3>gst_bit_writer_free_and_get_data ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+gst_bit_writer_free_and_get_data (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Frees <em class="parameter"><code>bitwriter</code></em>
+ without destroying the internal data, which is
+returned.</p>
+<p>Free-function: g_free</p>
+<div class="refsect3">
+<a name="gst-bit-writer-free-and-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-free-and-get-data.returns"></a><h4>Returns</h4>
+<p>the current data. <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> after
+usage. </p>
+<p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-init"></a><h3>gst_bit_writer_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_init (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Initializes <em class="parameter"><code>bitwriter</code></em>
+ to an empty instance.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gst-bit-writer-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-init-with-size"></a><h3>gst_bit_writer_init_with_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_init_with_size (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> size</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fixed</code></em>);</pre>
+<p>Initializes a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance and allocates the given data
+<em class="parameter"><code>size</code></em>
+.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gst-bit-writer-init-with-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>the size on bytes to allocate for data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the data can't be reallocated</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-init-with-data"></a><h3>gst_bit_writer_init_with_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_init_with_data (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> size</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> initialized</code></em>);</pre>
+<p>Initializes <em class="parameter"><code>bitwriter</code></em>
+ with the given memory area <em class="parameter"><code>data</code></em>
+. IF
+<em class="parameter"><code>initialized</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> it is possible to read <em class="parameter"><code>size</code></em>
+ bits from the
+<a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> from the beginning.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gst-bit-writer-init-with-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Memory area for writing. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=size][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Size of <em class="parameter"><code>data</code></em>
+in bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>initialized</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the complete data can be read from the beginning</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-reset"></a><h3>gst_bit_writer_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_reset (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Resets <em class="parameter"><code>bitwriter</code></em>
+ and frees the data if it's owned by <em class="parameter"><code>bitwriter</code></em>
+.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-reset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-reset-and-get-buffer"></a><h3>gst_bit_writer_reset_and_get_buffer ()</h3>
+<pre class="programlisting"><a href="../html/GstBuffer.html#GstBuffer-struct"><span class="returnvalue">GstBuffer</span></a> *
+gst_bit_writer_reset_and_get_buffer (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Resets <em class="parameter"><code>bitwriter</code></em>
+ and returns the current data as <a href="../html/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>.</p>
+<p>Free-function: gst_buffer_unref</p>
+<div class="refsect3">
+<a name="gst-bit-writer-reset-and-get-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-reset-and-get-buffer.returns"></a><h4>Returns</h4>
+<p>a new allocated <a href="../html/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> wrapping the
+current data. <a href="../html/GstBuffer.html#gst-buffer-unref"><code class="function">gst_buffer_unref()</code></a> after usage. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-reset-and-get-data"></a><h3>gst_bit_writer_reset_and_get_data ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+gst_bit_writer_reset_and_get_data (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Resets <em class="parameter"><code>bitwriter</code></em>
+ and returns the current data.</p>
+<p>Free-function: g_free</p>
+<div class="refsect3">
+<a name="gst-bit-writer-reset-and-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-reset-and-get-data.returns"></a><h4>Returns</h4>
+<p>the current data. <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> after
+usage. </p>
+<p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-set-pos"></a><h3>gst_bit_writer_set_pos ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_set_pos (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> pos</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-get-size"></a><h3>gst_bit_writer_get_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_bit_writer_get_size (<em class="parameter"><code>const <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Get size of written <em class="parameter"><code>data</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-bit-writer-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-get-size.returns"></a><h4>Returns</h4>
+<p> size of bits written in <em class="parameter"><code>data</code></em>
+</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-get-data"></a><h3>gst_bit_writer_get_data ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+gst_bit_writer_get_data (<em class="parameter"><code>const <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+<p>Get written data pointer</p>
+<div class="refsect3">
+<a name="gst-bit-writer-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-get-data.returns"></a><h4>Returns</h4>
+<p> data pointer</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-get-remaining"></a><h3>gst_bit_writer_get_remaining ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_bit_writer_get_remaining (<em class="parameter"><code>const <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-get-size-unchecked"></a><h3>gst_bit_writer_get_size_unchecked ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_bit_writer_get_size_unchecked (<em class="parameter"><code>const <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-get-data-unchecked"></a><h3>gst_bit_writer_get_data_unchecked ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+gst_bit_writer_get_data_unchecked (<em class="parameter"><code>const <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-set-pos-unchecked"></a><h3>gst_bit_writer_set_pos_unchecked ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_set_pos_unchecked (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> pos</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-get-remaining-unchecked"></a><h3>gst_bit_writer_get_remaining_unchecked ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_bit_writer_get_remaining_unchecked
+                               (<em class="parameter"><code>const <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint16"></a><h3>gst_bit_writer_put_bits_uint16 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_put_bits_uint16 (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a>.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint16.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint16.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if successful, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint32"></a><h3>gst_bit_writer_put_bits_uint32 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_put_bits_uint32 (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a>.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint32.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint32.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if successful, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint64"></a><h3>gst_bit_writer_put_bits_uint64 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_put_bits_uint64 (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a>.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint64.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint64.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if successful, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint8"></a><h3>gst_bit_writer_put_bits_uint8 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_put_bits_uint8 (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> value</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a>.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint8.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint8.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if successful, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bytes"></a><h3>gst_bit_writer_put_bytes ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_put_bytes (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbytes</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbytes</code></em>
+ bytes of <em class="parameter"><code>data</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a>.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bytes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>pointer of data to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbytes</p></td>
+<td class="parameter_description"><p>number of bytes to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bytes.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if successful, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint16-unchecked"></a><h3>gst_bit_writer_put_bits_uint16_unchecked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_put_bits_uint16_unchecked
+                               (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> without checking whether
+there is enough space</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint16-unchecked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint32-unchecked"></a><h3>gst_bit_writer_put_bits_uint32_unchecked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_put_bits_uint32_unchecked
+                               (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> without checking whether
+there is enough space</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint32-unchecked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint64-unchecked"></a><h3>gst_bit_writer_put_bits_uint64_unchecked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_put_bits_uint64_unchecked
+                               (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> without checking whether
+there is enough space</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint64-unchecked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bits-uint8-unchecked"></a><h3>gst_bit_writer_put_bits_uint8_unchecked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_put_bits_uint8_unchecked
+                               (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbits</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbits</code></em>
+ bits of <em class="parameter"><code>value</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> without checking whether
+there is enough space</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bits-uint8-unchecked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbits</p></td>
+<td class="parameter_description"><p>number of bits to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-put-bytes-unchecked"></a><h3>gst_bit_writer_put_bytes_unchecked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_put_bytes_unchecked (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbytes</code></em>);</pre>
+<p>Write <em class="parameter"><code>nbytes</code></em>
+ bytes of <em class="parameter"><code>data</code></em>
+ to <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> without checking whether
+there is enough space</p>
+<div class="refsect3">
+<a name="gst-bit-writer-put-bytes-unchecked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>pointer of data to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbytes</p></td>
+<td class="parameter_description"><p>number of bytes to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-align-bytes"></a><h3>gst_bit_writer_align_bytes ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_bit_writer_align_bytes (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> trailing_bit</code></em>);</pre>
+<p>Write trailing bit to align last byte of <em class="parameter"><code>data</code></em>
+. <em class="parameter"><code>trailing_bit</code></em>
+ can
+only be 1 or 0.</p>
+<div class="refsect3">
+<a name="gst-bit-writer-align-bytes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>trailing_bit</p></td>
+<td class="parameter_description"><p>trailing bits of last byte, 0 or 1</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-bit-writer-align-bytes.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if successful, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-bit-writer-align-bytes-unchecked"></a><h3>gst_bit_writer_align_bytes_unchecked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_bit_writer_align_bytes_unchecked (<em class="parameter"><code><a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> *bitwriter</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> trailing_bit</code></em>);</pre>
+<p>Write trailing bit to align last byte of <em class="parameter"><code>data</code></em>
+ without checking whether there
+is enough space</p>
+<div class="refsect3">
+<a name="gst-bit-writer-align-bytes-unchecked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bitwriter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gstreamer-libs-GstBitWriter.html#GstBitWriter" title="struct GstBitWriter"><span class="type">GstBitWriter</span></a> instance</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>trailing_bit</p></td>
+<td class="parameter_description"><p>trailing bits of last byte, 0 or 1</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gstreamer-libs-GstBitWriter.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstBitWriter"></a><h3>struct GstBitWriter</h3>
+<pre class="programlisting">struct GstBitWriter {
+  guint8 *data;
+  guint bit_size;
+};
+</pre>
+<p>A bit writer instance.</p>
+<div class="refsect3">
+<a name="GstBitWriter.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *<em class="structfield"><code><a name="GstBitWriter.data"></a>data</code></em>;</p></td>
+<td class="struct_member_description"><p>Allocated <em class="parameter"><code>data</code></em>
+for bit writer to write</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GstBitWriter.bit-size"></a>bit_size</code></em>;</p></td>
+<td class="struct_member_description"><p>Size of written <em class="parameter"><code>data</code></em>
+in bits</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.16</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

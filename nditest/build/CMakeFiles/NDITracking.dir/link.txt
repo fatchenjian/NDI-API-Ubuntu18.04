@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/NDITracking.dir/mytracking.cpp.o -o NDITracking   -L/home/chenjian/Desktop/ndicapi/NDI-master/build/linux  -Wl,-rpath,/home/chenjian/Desktop/ndicapi/ndicapi-master/build/lib:/home/chenjian/Desktop/ndicapi/NDI-master/build/linux -lndicapi /home/chenjian/Desktop/ndicapi/ndicapi-master/build/lib/libndicapi.so -lpthread 

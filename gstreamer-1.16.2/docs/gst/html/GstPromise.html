@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstPromise: GStreamer 1.0 Core Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer 1.0 Core Reference Manual">
+<link rel="up" href="libgstreamer.html" title="GStreamer Core Library">
+<link rel="prev" href="GstPreset.html" title="GstPreset">
+<link rel="next" href="gstreamer-GstProtectionMeta.html" title="GstProtection">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstPromise.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstPromise.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgstreamer.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstPreset.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gstreamer-GstProtectionMeta.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstPromise"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstPromise.top_of_page"></a>GstPromise</span></h2>
+<p>GstPromise — a miniobject for future/promise-like functionality</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstPromise.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GstPromise.html#GstPromiseChangeFunc" title="GstPromiseChangeFunc ()">*GstPromiseChangeFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstPromise.html" title="GstPromise"><span class="returnvalue">GstPromise</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-new" title="gst_promise_new ()">gst_promise_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstPromise.html" title="GstPromise"><span class="returnvalue">GstPromise</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-new-with-change-func" title="gst_promise_new_with_change_func ()">gst_promise_new_with_change_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstPromise.html" title="GstPromise"><span class="returnvalue">GstPromise</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-ref" title="gst_promise_ref ()">gst_promise_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-unref" title="gst_promise_unref ()">gst_promise_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GstPromise.html#GstPromiseResult" title="enum GstPromiseResult"><span class="returnvalue">GstPromiseResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-wait" title="gst_promise_wait ()">gst_promise_wait</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-reply" title="gst_promise_reply ()">gst_promise_reply</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-interrupt" title="gst_promise_interrupt ()">gst_promise_interrupt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-expire" title="gst_promise_expire ()">gst_promise_expire</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GstStructure.html" title="GstStructure"><span class="returnvalue">GstStructure</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPromise.html#gst-promise-get-reply" title="gst_promise_get_reply ()">gst_promise_get_reply</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstPromise.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GstPromise.html#GstPromiseResult" title="enum GstPromiseResult">GstPromiseResult</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GstPromise.html#GstPromise-struct" title="struct GstPromise">GstPromise</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstPromise.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">╰──</span> GstPromise
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstPromise.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/gst.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstPromise.description"></a><h2>Description</h2>
+<p>The <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> object implements the container for values that may
+be available later. i.e. a Future or a Promise in</p>
+<a class="ulink" href="https://en.wikipedia.org/wiki/Futures_and_promises" target="_top">https://en.wikipedia.org/wiki/Futures_and_promises</a><p>As with all Future/Promise-like functionality, there is the concept of the
+producer of the value and the consumer of the value.</p>
+<p>A <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> is created with <a class="link" href="GstPromise.html#gst-promise-new" title="gst_promise_new ()"><code class="function">gst_promise_new()</code></a> by the consumer and passed
+to the producer to avoid thread safety issues with the change callback.
+A <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> can be replied to with a value (or an error) by the producer
+with <a class="link" href="GstPromise.html#gst-promise-reply" title="gst_promise_reply ()"><code class="function">gst_promise_reply()</code></a>. <a class="link" href="GstPromise.html#gst-promise-interrupt" title="gst_promise_interrupt ()"><code class="function">gst_promise_interrupt()</code></a> is for the consumer to
+indicate to the producer that the value is not needed anymore and producing
+that value can stop.  The <em class="parameter"><code>GST_PROMISE_RESULT_EXPIRED</code></em>
+ state set by a call
+to <a class="link" href="GstPromise.html#gst-promise-expire" title="gst_promise_expire ()"><code class="function">gst_promise_expire()</code></a> indicates to the consumer that a value will never
+be produced and is intended to be called by a third party that implements
+some notion of message handling such as <a class="link" href="GstBus.html" title="GstBus"><span class="type">GstBus</span></a>.
+A callback can also be installed at <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> creation for
+result changes with <a class="link" href="GstPromise.html#gst-promise-new-with-change-func" title="gst_promise_new_with_change_func ()"><code class="function">gst_promise_new_with_change_func()</code></a>.
+The change callback can be used to chain <a href="GstPromise.html#GstPromise-struct"><span class="type">GstPromises</span></a>'s together as in the
+following example.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">const</span> GstStructure <span class="gtkdoc opt">*</span>reply<span class="gtkdoc opt">;</span>
+GstPromise <span class="gtkdoc opt">*</span>p<span class="gtkdoc opt">;</span>
+<span class="keyword">if</span> <span class="gtkdoc opt">(</span><span class="function"><a href="GstPromise.html#gst-promise-wait">gst_promise_wait</a></span> <span class="gtkdoc opt">(</span>promise<span class="gtkdoc opt">) !=</span> GST_PROMISE_RESULT_REPLIED<span class="gtkdoc opt">)</span>
+  <span class="keyword">return</span><span class="gtkdoc opt">;</span> <span class="gtkdoc slc">// interrupted or expired value</span>
+reply <span class="gtkdoc opt">=</span> <span class="function"><a href="GstPromise.html#gst-promise-get-reply">gst_promise_get_reply</a></span> <span class="gtkdoc opt">(</span>promise<span class="gtkdoc opt">);</span>
+<span class="keyword">if</span> <span class="gtkdoc opt">(</span>error in reply<span class="gtkdoc opt">)</span>
+  <span class="keyword">return</span><span class="gtkdoc opt">;</span> <span class="gtkdoc slc">// propagate error</span>
+p <span class="gtkdoc opt">=</span> <span class="function"><a href="GstPromise.html#gst-promise-new-with-change-func">gst_promise_new_with_change_func</a></span> <span class="gtkdoc opt">(</span>another_promise_change_func<span class="gtkdoc opt">,</span> user_data<span class="gtkdoc opt">,</span> notify<span class="gtkdoc opt">);</span>
+pass p to promise<span class="gtkdoc opt">-</span><span class="keyword">using</span> API</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>Each <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> starts out with a <a class="link" href="GstPromise.html#GstPromiseResult" title="enum GstPromiseResult"><span class="type">GstPromiseResult</span></a> of
+<a class="link" href="GstPromise.html#GST-PROMISE-RESULT-PENDING:CAPS"><code class="literal">GST_PROMISE_RESULT_PENDING</code></a> and only ever transitions once
+into one of the other <a class="link" href="GstPromise.html#GstPromiseResult" title="enum GstPromiseResult"><span class="type">GstPromiseResult</span></a>'s.</p>
+<p>In order to support multi-threaded code, <a class="link" href="GstPromise.html#gst-promise-reply" title="gst_promise_reply ()"><code class="function">gst_promise_reply()</code></a>,
+<a class="link" href="GstPromise.html#gst-promise-interrupt" title="gst_promise_interrupt ()"><code class="function">gst_promise_interrupt()</code></a> and <a class="link" href="GstPromise.html#gst-promise-expire" title="gst_promise_expire ()"><code class="function">gst_promise_expire()</code></a> may all be from
+different threads with some restrictions and the final result of the promise
+is whichever call is made first.  There are two restrictions on ordering:</p>
+<div class="orderedlist"><ol class="orderedlist" type="1">
+<li class="listitem"><p>That <a class="link" href="GstPromise.html#gst-promise-reply" title="gst_promise_reply ()"><code class="function">gst_promise_reply()</code></a> and <a class="link" href="GstPromise.html#gst-promise-interrupt" title="gst_promise_interrupt ()"><code class="function">gst_promise_interrupt()</code></a> cannot be called
+after <a class="link" href="GstPromise.html#gst-promise-expire" title="gst_promise_expire ()"><code class="function">gst_promise_expire()</code></a></p></li>
+<li class="listitem"><p>That <a class="link" href="GstPromise.html#gst-promise-reply" title="gst_promise_reply ()"><code class="function">gst_promise_reply()</code></a> and <a class="link" href="GstPromise.html#gst-promise-interrupt" title="gst_promise_interrupt ()"><code class="function">gst_promise_interrupt()</code></a>
+cannot be called twice.</p></li>
+</ol></div>
+<p>The change function set with <a class="link" href="GstPromise.html#gst-promise-new-with-change-func" title="gst_promise_new_with_change_func ()"><code class="function">gst_promise_new_with_change_func()</code></a> is
+called directly from either the <a class="link" href="GstPromise.html#gst-promise-reply" title="gst_promise_reply ()"><code class="function">gst_promise_reply()</code></a>,
+<a class="link" href="GstPromise.html#gst-promise-interrupt" title="gst_promise_interrupt ()"><code class="function">gst_promise_interrupt()</code></a> or <a class="link" href="GstPromise.html#gst-promise-expire" title="gst_promise_expire ()"><code class="function">gst_promise_expire()</code></a> and can be called
+from an arbitrary thread.  <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> using APIs can restrict this to
+a single thread or a subset of threads but that is entirely up to the API
+that uses <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GstPromise.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GstPromiseChangeFunc"></a><h3>GstPromiseChangeFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GstPromiseChangeFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<div class="refsect3">
+<a name="GstPromiseChangeFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-new"></a><h3>gst_promise_new ()</h3>
+<pre class="programlisting"><a class="link" href="GstPromise.html" title="GstPromise"><span class="returnvalue">GstPromise</span></a> *
+gst_promise_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="gst-promise-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-new-with-change-func"></a><h3>gst_promise_new_with_change_func ()</h3>
+<pre class="programlisting"><a class="link" href="GstPromise.html" title="GstPromise"><span class="returnvalue">GstPromise</span></a> *
+gst_promise_new_with_change_func (<em class="parameter"><code><a class="link" href="GstPromise.html#GstPromiseChangeFunc" title="GstPromiseChangeFunc ()"><span class="type">GstPromiseChangeFunc</span></a> func</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> notify</code></em>);</pre>
+<p><em class="parameter"><code>func</code></em>
+ will be called exactly once when transitioning out of
+<a class="link" href="GstPromise.html#GST-PROMISE-RESULT-PENDING:CAPS"><code class="literal">GST_PROMISE_RESULT_PENDING</code></a> into any of the other <a class="link" href="GstPromise.html#GstPromiseResult" title="enum GstPromiseResult"><span class="type">GstPromiseResult</span></a>
+states.</p>
+<div class="refsect3">
+<a name="gst-promise-new-with-change-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html#GstPromiseChangeFunc" title="GstPromiseChangeFunc ()"><span class="type">GstPromiseChangeFunc</span></a> to call. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid until the GDestroyNotify argument is called."><span class="acronym">scope notified</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>argument to call <em class="parameter"><code>func</code></em>
+with. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>notify</p></td>
+<td class="parameter_description"><p>notification function that <em class="parameter"><code>user_data</code></em>
+is no longer needed</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-promise-new-with-change-func.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-ref"></a><h3>gst_promise_ref ()</h3>
+<pre class="programlisting"><a class="link" href="GstPromise.html" title="GstPromise"><span class="returnvalue">GstPromise</span></a> *
+gst_promise_ref (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>);</pre>
+<p>Increases the refcount of the given <em class="parameter"><code>promise</code></em>
+ by one.</p>
+<div class="refsect3">
+<a name="gst-promise-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-promise-ref.returns"></a><h4>Returns</h4>
+<p><em class="parameter"><code>promise</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-unref"></a><h3>gst_promise_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_promise_unref (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>);</pre>
+<p>Decreases the refcount of the promise. If the refcount reaches 0, the
+promise will be freed.</p>
+<div class="refsect3">
+<a name="gst-promise-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-wait"></a><h3>gst_promise_wait ()</h3>
+<pre class="programlisting"><a class="link" href="GstPromise.html#GstPromiseResult" title="enum GstPromiseResult"><span class="returnvalue">GstPromiseResult</span></a>
+gst_promise_wait (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>);</pre>
+<p>Wait for <em class="parameter"><code>promise</code></em>
+ to move out of the <a class="link" href="GstPromise.html#GST-PROMISE-RESULT-PENDING:CAPS"><code class="literal">GST_PROMISE_RESULT_PENDING</code></a> state.
+If <em class="parameter"><code>promise</code></em>
+ is not in <a class="link" href="GstPromise.html#GST-PROMISE-RESULT-PENDING:CAPS"><code class="literal">GST_PROMISE_RESULT_PENDING</code></a> then it will return
+immediately with the current result.</p>
+<div class="refsect3">
+<a name="gst-promise-wait.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-promise-wait.returns"></a><h4>Returns</h4>
+<p> the result of the promise</p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-reply"></a><h3>gst_promise_reply ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_promise_reply (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>,
+                   <em class="parameter"><code><a class="link" href="GstStructure.html" title="GstStructure"><span class="type">GstStructure</span></a> *s</code></em>);</pre>
+<p>Set a reply on <em class="parameter"><code>promise</code></em>
+.  This will wake up any waiters with
+<a class="link" href="GstPromise.html#GST-PROMISE-RESULT-REPLIED:CAPS"><code class="literal">GST_PROMISE_RESULT_REPLIED</code></a>.  Called by the producer of the value to
+indicate success (or failure).</p>
+<p>If <em class="parameter"><code>promise</code></em>
+ has already been interrupted by the consumer, then this reply
+is not visible to the consumer.</p>
+<div class="refsect3">
+<a name="gst-promise-reply.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>s</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstStructure.html" title="GstStructure"><span class="type">GstStructure</span></a> with the the reply contents. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-interrupt"></a><h3>gst_promise_interrupt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_promise_interrupt (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>);</pre>
+<p>Interrupt waiting for a <em class="parameter"><code>promise</code></em>
+.  This will wake up any waiters with
+<a class="link" href="GstPromise.html#GST-PROMISE-RESULT-INTERRUPTED:CAPS"><code class="literal">GST_PROMISE_RESULT_INTERRUPTED</code></a>.  Called when the consumer does not want
+the value produced anymore.</p>
+<div class="refsect3">
+<a name="gst-promise-interrupt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-expire"></a><h3>gst_promise_expire ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_promise_expire (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>);</pre>
+<p>Expire a <em class="parameter"><code>promise</code></em>
+.  This will wake up any waiters with
+<a class="link" href="GstPromise.html#GST-PROMISE-RESULT-EXPIRED:CAPS"><code class="literal">GST_PROMISE_RESULT_EXPIRED</code></a>.  Called by a message loop when the parent
+message is handled and/or destroyed (possibly unanswered).</p>
+<div class="refsect3">
+<a name="gst-promise-expire.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-promise-get-reply"></a><h3>gst_promise_get_reply ()</h3>
+<pre class="programlisting">const <a class="link" href="GstStructure.html" title="GstStructure"><span class="returnvalue">GstStructure</span></a> *
+gst_promise_get_reply (<em class="parameter"><code><a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a> *promise</code></em>);</pre>
+<p>Retrieve the reply set on <em class="parameter"><code>promise</code></em>
+.  <em class="parameter"><code>promise</code></em>
+ must be in
+<a class="link" href="GstPromise.html#GST-PROMISE-RESULT-REPLIED:CAPS"><code class="literal">GST_PROMISE_RESULT_REPLIED</code></a> and the returned structure is owned by <em class="parameter"><code>promise</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-promise-get-reply.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-promise-get-reply.returns"></a><h4>Returns</h4>
+<p>The reply set on <em class="parameter"><code>promise</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstPromise.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstPromiseResult"></a><h3>enum GstPromiseResult</h3>
+<p>The result of a <a class="link" href="GstPromise.html" title="GstPromise"><span class="type">GstPromise</span></a></p>
+<div class="refsect3">
+<a name="GstPromiseResult.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-PROMISE-RESULT-PENDING:CAPS"></a>GST_PROMISE_RESULT_PENDING</p></td>
+<td class="enum_member_description">
+<p>Initial state. Waiting for transition to any
+	other state.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-PROMISE-RESULT-INTERRUPTED:CAPS"></a>GST_PROMISE_RESULT_INTERRUPTED</p></td>
+<td class="enum_member_description">
+<p>Interrupted by the consumer as it doesn't
+	want the value anymore.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-PROMISE-RESULT-REPLIED:CAPS"></a>GST_PROMISE_RESULT_REPLIED</p></td>
+<td class="enum_member_description">
+<p>A producer marked a reply</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-PROMISE-RESULT-EXPIRED:CAPS"></a>GST_PROMISE_RESULT_EXPIRED</p></td>
+<td class="enum_member_description">
+<p>The promise expired (the carrying object
+	lost all refs) and the promise will never be fulfilled.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstPromise-struct"></a><h3>struct GstPromise</h3>
+<pre class="programlisting">struct GstPromise {
+  GstMiniObject         parent;
+};
+</pre>
+<div class="refsect3">
+<a name="GstPromise.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><a class="link" href="gstreamer-GstMiniObject.html#GstMiniObject" title="struct GstMiniObject"><span class="type">GstMiniObject</span></a> <em class="structfield"><code><a name="GstPromise-struct.parent"></a>parent</code></em>;</p></td>
+<td class="struct_member_description"><p>parent <a class="link" href="gstreamer-GstMiniObject.html#GstMiniObject" title="struct GstMiniObject"><span class="type">GstMiniObject</span></a></p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix03.html#api-index-1.14">1.14</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

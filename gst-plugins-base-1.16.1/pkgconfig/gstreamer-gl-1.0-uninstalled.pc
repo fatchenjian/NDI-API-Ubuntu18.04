@@ -1,0 +1,18 @@
+prefix=
+exec_prefix=
+libdir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/gl/.libs
+includedir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs
+girdir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/base
+typelibdir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/base
+gl_platforms=glx egl 
+gl_winsys=x11 
+gl_apis=gles2 gl 
+
+Name: GStreamer OpenGL Plugins Libraries, Uninstalled
+Description: Streaming media framework, OpenGL plugins libraries, uninstalled
+Version: 1.16.1
+Requires: gstreamer-video-1.0 gstreamer-base-1.0 gstreamer-1.0
+
+Libs: -L${libdir} -lgstgl-1.0
+Cflags: -I/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs -I/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs   -I/usr/include/libdrm
+

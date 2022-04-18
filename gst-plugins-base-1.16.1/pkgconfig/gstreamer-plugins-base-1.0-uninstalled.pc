@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs
+pluginsdir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1
+
+Name: GStreamer Base Plugins Libraries, Uninstalled
+Description: Streaming media framework, base plugins libraries, uninstalled
+Version: 1.16.1
+Requires: gstreamer-1.0
+Libs: -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/allocators/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/app/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/audio/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/fft/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/pbutils/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/riff/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/rtp/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/rtsp/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/sdp/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/tag/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/video/.libs -L/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/gl/.libs
+Cflags: -I/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs -I/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs
+
+libraries=allocators app audio fft pbutils riff rtp rtsp sdp tag video gl

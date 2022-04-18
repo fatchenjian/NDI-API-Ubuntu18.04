@@ -1,0 +1,3 @@
+/home/chenjian/Desktop/ndicapi/test/build/CMakeFiles/rebuild_cache.dir
+/home/chenjian/Desktop/ndicapi/test/build/CMakeFiles/NDITracking.dir
+/home/chenjian/Desktop/ndicapi/test/build/CMakeFiles/edit_cache.dir

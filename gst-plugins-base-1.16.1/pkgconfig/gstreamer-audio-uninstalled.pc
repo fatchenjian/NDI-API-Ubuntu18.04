@@ -1,0 +1,17 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=@audiolibdir@
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs
+girdir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/audio
+typelibdir=/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs/gst/audio
+
+Name: GStreamer Audio Library, Uninstalled
+Description: Audio helper functions and base classes, uninstalled
+Version: 1.16.1
+Requires: gstreamer-1.0 gstreamer-base-1.0
+Requires.private: orc-0.4
+Libs: -L${libdir} -lgstaudio-1.0
+Cflags: -I/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs -I/home/chenjian/Desktop/ndicapi/gst-plugins-base-1.16.1/gst-libs
+

@@ -41,7 +41,7 @@ cd automake-1.16 && ./configure && make && sudo make install
 ```
 安装automake的主要目的是为了防止出现以下问题
 ```bash
-cd automake-1.16 && ./configure && make && sudo make install
+missing: line 81: aclocal-1.16: command not found
 ```
 ## 安装gst-plugins-base-1.16.1
 ```bash
@@ -57,6 +57,7 @@ cd build && cmake.. && make && sudo make install
 make
 ```
 ## 测试
+编译
 ```bash
 cd nditest
 mkdir build
@@ -65,4 +66,8 @@ cd build && cmake .. && make
 注意需要修改CMakeLists.txt中的NDI-master的绝对路径
 ```bash
 set(ROOT_FILE <NDI-master 路径>)
+```
+运行
+```bash
+./NDITracking /dev/ttyUSBx
 ```
