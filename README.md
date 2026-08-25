@@ -1,3 +1,5 @@
+
+
 # NDI-API-Ubuntu18.04
 ![logo](https://img.shields.io/badge/ubuntu18.04-build%20pass-green?logo=ubuntu) 
 
@@ -50,7 +52,7 @@ cd gst-plugins-base-1.16.1 && ./configure && make && sudo make install
 ## 编译ndicapi-master
 ```bash
 mkdir build
-cd build && cmake.. && make && sudo make install
+cd build && cmake .. && make && sudo make install
 ```
 ## 编译NDI-master
 ```bash
